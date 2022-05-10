@@ -10,20 +10,12 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com"> 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crete+Round&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Convergence&display=swap" rel="stylesheet">
         <style>
             body{
                 font-family:'Convergence', sans-serif;
-            }
-
-            .primaryHeader{
-                text-align: center; 
-                color: #13694c;
-            }
-
-            .secondaryHeader{
-                text-align: center; 
-                color: #13694c;
             }
             
             /* NAVIGATION STYLE*/
@@ -68,7 +60,7 @@
             .menuElement a{
                 text-decoration: none;
                 color: white;
-                font-size: 1.5vw;
+                font-size: 100%;
                 
             }
 
@@ -171,142 +163,14 @@
 
             .mainPart{
                 border: 0mm solid black;
-                width: 100%;
                 
-                padding: 0vw;
-            }
-
-            /*Common elements*/
-            .greenBtn{
-                background-color: #13694c;
-                color: #ffffff;
-                border: 0px;
-                border-radius: 8px;
-                padding: 1%;
-            }
-
-            .greenBtn:hover{
-                background-color: #585757;
+                padding: vw;
             }
 
             /*GALLERY STYLE*/
-            .galleryImageContainer{
-                text-align: center;
-            }
-            .galleryImage{
-                display: inline-block;
-                border: 1px solid blue;
-                outline: 1px solid green;
-            }
+               
 
-            .galleryImageIMG{
-                width: 17vw;
-                height: 17vw;
 
-            }
-
-            .galleryImage.centralIMG{
-                width: 23vw;
-                height: 23vw;
-            }
-
-            .galleryImage.leftIMG, .galleryImage.rightIMG{
-                margin-bottom: 3vw;
-            }
-            /*END GALLERY STYLE*/
-            /**/
-            .someClass {
-                color: #00a2ff;
-                color: #0d7f53;
-                color: #13694c;
-                color: #1a5e3e;
-                color: #8f8f8f;
-                color: #585757;
-                color: #363636;
-                color: #ffffff;
-                color: #000000;
-                font-size: 35pt;
-                font-size: 23pt;
-                font-size: 17pt;
-                font-size: 1.5vw;
-                font-size: 1.8vw;
-                font-size: 2vw;
-
-            }
-
-            .roadDesignerLine{
-                background-color: #363636;
-                padding: 1%;
-                border-top: 15px dashed #ffffff;
-                border-bottom: 15px dashed #ffffff;
-
-            }
-
-            .roadDesignerLine p{
-                color: #ffffff;
-                display: inline-block;
-                max-width: 15vw;
-                margin-top: 5%;
-                margin-bottom: 5%;
-                margin-left: 4%;
-                margin-right: 4%;
-                font-size: 1.8vw;
-                text-align: center;
-            }
-
-            .pageBlock{
-                position: relative;
-                border: 5px solid #13694c;
-                border-radius: 10px;
-                font-size: 1.5vw;
-                margin-top: 2%;
-                max-height: 400px;
-                overflow-y: scroll;
-                
-            }
-
-            .pageBlock:nth-of-type(1){
-                margin-right: 3%;
-                margin-left: 8%;
-            }
-            .pageBlock:nth-of-type(2){
-                margin-right: 7%;
-                margin-left: 3%;
-            }
-           
-            .pageBlock li{
-                margin-bottom: 1%;
-                color: #363636;
-            }
-
-            .pageBlock a{
-                text-decoration: none;
-                color: #363636;
-            }
-            .pageBlock a:hover{
-                text-decoration: none;
-                color: #00a2ff;
-            }
-
-            .pageBlock .greenBtn{
-                position: absolute;
-                right:5px;
-                bottom: 5px;
-            }
-
-            p{
-                color: #585757;
-                font-size: 1.5vw;
-                margin-top: 2%;
-                margin-left: 10%;
-            }
-
-            /*Modals styling*/
-            .modalHeader{
-                color:#ffffff; 
-                background-color: #1a5e3e;
-            }
-           
             /* On smaller screens, decrease text size */
             @media only screen and (max-width: 300px) {
                 .text {font-size: 11px}
@@ -319,7 +183,9 @@
                 margin-right: 1%;
             }
 
-            
+            .centralRow{
+                padding: 0%;
+            }
             #footerPart{
                 border: 1mm solid black;
                 margin-top: 1%;
@@ -331,7 +197,6 @@
     <body>
         <div class = "container-fluid">
 
-            <!--This row is navigation-->
             <div class = "row">
              <nav>
                 <span id = "brandName">Drivetoys</span>
@@ -360,116 +225,29 @@
              </nav>
             </div>
             
-            <!--This row is body-->
-            <div class = "row">
-                <h1 class="primaryHeader">Drivetoys&Sweets!</h1>               
-                <div class = "col-md-12 mainPart">
-                    <!--This is gallery on Index-->
-                    <div class = "row" >
-                        <div class = "col-md galleryImageContainer" >
-                            <div class="galleryImage leftIMG">
-                                <img class="galleryImageIMG" src="pic3.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic1.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic2.png" height="100%" alt="">
-                            </div>
-                            <div class="galleryImage centralIMG">
-                                <img class="galleryImageIMG" src="pic1.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic2.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic3.png" height="100%" alt="">
-                            </div>
-                            <div class="galleryImage rightIMG">
-                                <img class="galleryImageIMG" src="pic2.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic3.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic1.png" height="100%" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class="col-md roadDesigner">
-                            <div class = "roadDesignerLine">
-                                <p class = "">
-                                    • Наличие ассортимента
-                                </p>
-                                <p class = "">
-                                    • Качественная продукция
-                                </p>
-                                <p class = "">
-                                    • Комфортные условия
-                                </p>
-                                <p class = "">
-                                    • Поддержка партнёров
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class="col-sm-5 pageBlock">
-                            <h3 class="secondaryHeader">Работа с DT'S</h3>
-                            <ul>
-                                <li>
-                                    Индивидуальные условия работы
-                                </li>
-                                <li>
-                                    Гарантия наличия остатков на складах
-                                </li>
-                                <li>
-                                    Регулярная поддержка партнёров
-                                </li>
-                                <li>
-                                    Качественная продукция: игрушки и конфеты
-                                </li>
-                                <li>
-                                    Полный пакет документов и полная сертификация
-                                </li>
-                            </ul>
-                            <button data-bs-toggle="modal" data-bs-target="#becomePartner" class="greenBtn">Сотрудничество</button>
-                        </div>
-                        <div class="col-sm-4 pageBlock">
-                            <h3 class="secondaryHeader">Новости</h3>
-                            <ul>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                
-                            </ul>
-
-                        </div>
-                        
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <p>
-                                Если у вас остались вопросы или Вы хотите обратиться в нашу поддержку, оставляйте заявку по кнопке ниже!
-                                <button class="greenBtn">Обращение</button>
-
-                            </p>
-                        </div>
-                    </div>
+            <div class = "row centralRow">
+                <h1 style="text-align: center; color: #13694c;">О компании Drivetoys&Sweets!</h1>               
+                <div class = "col-md-12 mainPart centralPart" style="padding-left: 10%; padding-right: 10%; font-size: 17pt;">
+                    <p>
+                        <img src="LogoDT(Official).png" width="40%" alt="LogoDT" align = "right">
+                        Drivetoys - молодой брэнд, который быстро полюбили, как родители, так и дети по всей России. Но на чём основано доверие к нам?
+                    </p>
+                    <p>
+                        Во первых, вся продукция DT проходит достаточно тяжёлый процесс сертификации. Это включает в себя испытания игрушки, её состовляющих на безопасность для здоровья детей. С каждым годом требования к безопасности игрушек на территории РФ повышаются, однако для нас это не является проблемой, ведь ещё на стадии производства продукции мы уделяем много внимания безопасности.
+                    </p>
+                    <p>
+                        Во вторых, мы всегда ценим наших клиентов. Для нас важно, чтобы наша продукция становилась очердной возможностью к успеху для партнёров в сфере B2B, а для частных клиентов поводом для счасьтя их детей и их самих!
+                    </p>
+                    <p>
+                        В третьих, мы всегда стараемся улучшаться. Для Drivetoys очень важную роль играет обратная связь от покупателей. Ведь именно таким образом нам удаётся улучшать себя и свою продукцию. Мы расчитываем на вашы советы, пожелания и обещаем к ним прислушиваться.
+                    </p>
+                    <p>
+                        Кому-то может показаться, что соблюдать принципы указанные выше очень сложно. И по правде говоря это так и есть. Но ради радостных детей и их счастливых родителей, мы готовы работать не покладая рук. Мы уверены в оцените наш труд!
+                    </p>
                 </div>           
             </div>
 
-            <!--This row is footer-->
+            
             <div class = "row">
                 <div id = "footerPart" class = "col-md" style="background-color: black; color:white; text-align: center; padding:1%; margin-top: 3%;">
                     <span>Drivetoys® - 2022</span>
@@ -480,12 +258,12 @@
 
         <!--Not actual page below-->
         <!-- Modal -->
-        <div class="modal fade" id="becomePartner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+        <div class="modal fade" id="fullNews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
             <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
-                <div class="modal-header modalHeader" style="color:white; background-color: #1a5e3e;">
-                    <h5 class="modal-title" id="exampleModalLabel">Создать обращение</h5>
+                <div class="modal-header" style=" color:white; background-color: #1a5e3e;">
+                    <h5 class="modal-title" id="exampleModalLabel">Drivetoys - начало!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" style="background-color: #ffffff; padding: 0; text-align: center;">
@@ -616,7 +394,7 @@
             }
            
            
-        </script>
+           </script>
 
     </body>
 </html>
