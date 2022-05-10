@@ -171,13 +171,17 @@
 
             .mainPart{
                 border: 0mm solid black;
-                width: 100%;
-                
-                padding: 0vw;
             }
 
+            .mainPart .container-fluid{
+                padding: 0;
+            }
+
+            
+
+
             /*Common elements*/
-            .greenBtn{
+            .greenBtn, .grayBtn{
                 background-color: #13694c;
                 color: #ffffff;
                 border: 0px;
@@ -185,14 +189,20 @@
                 padding: 1%;
             }
 
-            .greenBtn:hover{
+            .grayBtn{
+                background-color: #8f8f8f;
+            }
+
+            .greenBtn:hover, .grayBtn:hover{
                 background-color: #585757;
             }
+            
 
             /*GALLERY STYLE*/
             .galleryImageContainer{
                 text-align: center;
             }
+
             .galleryImage{
                 display: inline-block;
                 border: 1px solid blue;
@@ -214,6 +224,7 @@
                 margin-bottom: 3vw;
             }
             /*END GALLERY STYLE*/
+
             /**/
             .someClass {
                 color: #00a2ff;
@@ -234,9 +245,15 @@
 
             }
 
+            /*Road design*/
+            .roadDesigner{
+                padding: 0;
+            }
             .roadDesignerLine{
                 background-color: #363636;
                 padding: 1%;
+                
+
                 border-top: 15px dashed #ffffff;
                 border-bottom: 15px dashed #ffffff;
 
@@ -254,6 +271,7 @@
                 text-align: center;
             }
 
+            /*Page Block styling*/
             .pageBlock{
                 position: relative;
                 border: 5px solid #13694c;
@@ -266,12 +284,12 @@
             }
 
             .pageBlock:nth-of-type(1){
-                margin-right: 3%;
-                margin-left: 8%;
+                margin-right: 0%;
+                margin-left: 10%;
             }
             .pageBlock:nth-of-type(2){
-                margin-right: 7%;
-                margin-left: 3%;
+                margin-right: 0%;
+                margin-left: 5%;
             }
            
             .pageBlock li{
@@ -306,6 +324,64 @@
                 color:#ffffff; 
                 background-color: #1a5e3e;
             }
+
+            .modalBody{
+                background-color: #ffffff; 
+                padding: 0; 
+                text-align: center;
+            }
+            .modalBody p{
+                text-align: justify; 
+                background-color: white; 
+                font-size: 14pt; color: black; 
+                padding: 2%; 
+                max-height: 500px; 
+                overflow-y: scroll;
+            }
+
+            .modalBody p span{
+                font-size: 12pt; 
+                color: #8f8f8f;
+            }
+
+            .modalBody p img{
+                margin-right: 3%; 
+                margin-bottom: 3%;
+            }
+
+            .modalBody form{
+                padding-top:2%;
+                padding-left:5%;
+                padding-bottom:5%;
+                text-align: left;
+            }  
+
+            .modalBody form .greenBtn, .modalBody form .grayBtn{
+                position: absolute;
+                right: 30px;
+                bottom: 10px;
+                font-size: 1.5vw;
+            }
+            .modalBody form .grayBtn{
+                right: 160px;
+            }
+            /*Form styling*/
+            form label{
+                font-size: 1.3vw;
+                color: #585757;
+
+            }
+
+            form input, form textarea{
+                width: 95%;
+                border-radius: 7px;
+                font-size: 1.3vw;
+                border: 2px solid #939393 ;
+            }
+
+
+
+            
            
             /* On smaller screens, decrease text size */
             @media only screen and (max-width: 300px) {
@@ -363,109 +439,112 @@
             <!--This row is body-->
             <div class = "row">
                 <h1 class="primaryHeader">Drivetoys&Sweets!</h1>               
-                <div class = "col-md-12 mainPart">
+                <div class = "col-12 mainPart">
+                    <div class="container-fluid mainPart">
+                        <div class = "row" >
+                            <div class = "col-md galleryImageContainer" >
+                                <div class="galleryImage leftIMG">
+                                    <img class="galleryImageIMG" src="pic3.png" height="100%" alt="">
+                                    <img class="galleryImageIMG" src="pic1.png" height="100%" alt="">
+                                    <img class="galleryImageIMG" src="pic2.png" height="100%" alt="">
+                                </div>
+                                <div class="galleryImage centralIMG">
+                                    <img class="galleryImageIMG" src="pic1.png" height="100%" alt="">
+                                    <img class="galleryImageIMG" src="pic2.png" height="100%" alt="">
+                                    <img class="galleryImageIMG" src="pic3.png" height="100%" alt="">
+                                </div>
+                                <div class="galleryImage rightIMG">
+                                    <img class="galleryImageIMG" src="pic2.png" height="100%" alt="">
+                                    <img class="galleryImageIMG" src="pic3.png" height="100%" alt="">
+                                    <img class="galleryImageIMG" src="pic1.png" height="100%" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class="col-md roadDesigner">
+                                <div class = "roadDesignerLine">
+                                    <p class = "">
+                                        • Наличие ассортимента
+                                    </p>
+                                    <p class = "">
+                                        • Качественная продукция
+                                    </p>
+                                    <p class = "">
+                                        • Комфортные условия
+                                    </p>
+                                    <p class = "">
+                                        • Поддержка партнёров
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class="col-sm-5 pageBlock">
+                                <h2 class="secondaryHeader">Работа с DT'S</h2>
+                                <ul>
+                                    <li>
+                                        Индивидуальные условия работы
+                                    </li>
+                                    <li>
+                                        Гарантия наличия остатков на складах
+                                    </li>
+                                    <li>
+                                        Регулярная поддержка партнёров
+                                    </li>
+                                    <li>
+                                        Качественная продукция: игрушки и конфеты
+                                    </li>
+                                    <li>
+                                        Полный пакет документов и полная сертификация
+                                    </li>
+                                </ul>
+                                <button data-bs-toggle="modal" data-bs-target="#becomePartner" class="greenBtn">Сотрудничество</button>
+                            </div>
+                            <div class="col-sm-4 pageBlock">
+                                <h2 class="secondaryHeader">Новости</h2>
+                                <ul>
+                                    <li><a href="">
+                                        Мои новости на сегодня
+                                        <br><small>22.02.2022|Акции</small></a>
+                                    </li>
+                                    <li><a href="">
+                                        Мои новости на сегодня
+                                        <br><small>22.02.2022|Акции</small></a>
+                                    </li>
+                                    <li><a href="">
+                                        Мои новости на сегодня
+                                        <br><small>22.02.2022|Акции</small></a>
+                                    </li>
+                                    <li><a href="">
+                                        Мои новости на сегодня
+                                        <br><small>22.02.2022|Акции</small></a>
+                                    </li>
+                                    <li><a href="">
+                                        Мои новости на сегодня
+                                        <br><small>22.02.2022|Акции</small></a>
+                                    </li>
+                                    <li><a href="">
+                                        Мои новости на сегодня
+                                        <br><small>22.02.2022|Акции</small></a>
+                                    </li>
+                                    
+                                </ul>
+    
+                            </div>
+                            
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                <p>
+                                    Если у вас остались вопросы или Вы хотите обратиться в нашу поддержку, оставляйте заявку по кнопке ниже!
+                                    <button data-bs-toggle="modal" data-bs-target="#makeEnquiry" class="greenBtn">Обращение</button>
+    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                     <!--This is gallery on Index-->
-                    <div class = "row" >
-                        <div class = "col-md galleryImageContainer" >
-                            <div class="galleryImage leftIMG">
-                                <img class="galleryImageIMG" src="pic3.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic1.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic2.png" height="100%" alt="">
-                            </div>
-                            <div class="galleryImage centralIMG">
-                                <img class="galleryImageIMG" src="pic1.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic2.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic3.png" height="100%" alt="">
-                            </div>
-                            <div class="galleryImage rightIMG">
-                                <img class="galleryImageIMG" src="pic2.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic3.png" height="100%" alt="">
-                                <img class="galleryImageIMG" src="pic1.png" height="100%" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class="col-md roadDesigner">
-                            <div class = "roadDesignerLine">
-                                <p class = "">
-                                    • Наличие ассортимента
-                                </p>
-                                <p class = "">
-                                    • Качественная продукция
-                                </p>
-                                <p class = "">
-                                    • Комфортные условия
-                                </p>
-                                <p class = "">
-                                    • Поддержка партнёров
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class="col-sm-5 pageBlock">
-                            <h3 class="secondaryHeader">Работа с DT'S</h3>
-                            <ul>
-                                <li>
-                                    Индивидуальные условия работы
-                                </li>
-                                <li>
-                                    Гарантия наличия остатков на складах
-                                </li>
-                                <li>
-                                    Регулярная поддержка партнёров
-                                </li>
-                                <li>
-                                    Качественная продукция: игрушки и конфеты
-                                </li>
-                                <li>
-                                    Полный пакет документов и полная сертификация
-                                </li>
-                            </ul>
-                            <button data-bs-toggle="modal" data-bs-target="#becomePartner" class="greenBtn">Сотрудничество</button>
-                        </div>
-                        <div class="col-sm-4 pageBlock">
-                            <h3 class="secondaryHeader">Новости</h3>
-                            <ul>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                <li><a href="">
-                                    Мои новости на сегодня
-                                    <br><small>22.02.2022|Акции</small></a>
-                                </li>
-                                
-                            </ul>
-
-                        </div>
-                        
-                    </div>
-                    <div class="row">
-                        <div class="col-sm">
-                            <p>
-                                Если у вас остались вопросы или Вы хотите обратиться в нашу поддержку, оставляйте заявку по кнопке ниже!
-                                <button class="greenBtn">Обращение</button>
-
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>           
             </div>
 
@@ -481,17 +560,78 @@
         <!--Not actual page below-->
         <!-- Modal -->
         <div class="modal fade" id="becomePartner" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-md">
             <div class="modal-content">
 
-                <div class="modal-header modalHeader" style="color:white; background-color: #1a5e3e;">
+                <div class="modal-header modalHeader">
                     <h5 class="modal-title" id="exampleModalLabel">Создать обращение</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body" style="background-color: #ffffff; padding: 0; text-align: center;">
-                    <p style="text-align: justify; background-color: white; font-size: 14pt; color: black; padding: 2%; max-height: 500px; overflow-y: scroll;">
-                        <span style="font-size: 12pt; color: #8f8f8f;">О компании | 07 Июль 2020</span><br>
-                        <img src = "photo1.png" width="35%"  class = "galleryImageIMG" align = "left" style="margin-right: 3%; margin-bottom: 3%;">            
+                <div class="modal-body modalBody">
+                    <form action="">
+                        <label for="inputName">Имя:</label><br>
+                        <input id="inputName" type="text"><br>
+                        <label for="inputTel">Телефон:</label><br>
+                        <input id="inputTel" type="text"><br>
+                        <label for="inputMail">Email:</label><br>
+                        <input id="inputMail" type="text"><br>
+                        <hr>
+                        <label for="inputFirmName">Наименование компании:</label><br>
+                        <input id="inputFirmName" type="text"><br>
+                        <label for="inputINN">ИНН:</label><br>
+                        <input id="inputINN" type="text"><br>
+                        <label for="inputRegion">Город/Регион:</label><br>
+                        <input id="inputRegion" type="text"><br>
+                        <label for="inputMsg">Ваше обращение:</label><br>
+                        <textarea id="inputMsg" rows="5" cols="50" type="text"></textarea><br>
+                        <br>
+                        <button class="grayBtn">Очистить</button>
+                        <button class="greenBtn">Отправить</button>
+                    </form>
+                </div>                              
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="makeEnquiry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-md">
+            <div class="modal-content">
+
+                <div class="modal-header modalHeader">
+                    <h5 class="modal-title" id="exampleModalLabel">Создать обращение</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modalBody">
+                    <form action="">
+                        <label for="inputName">Имя:</label><br>
+                        <input id="inputName" type="text"><br>
+                        <label for="inputTel">Телефон:</label><br>
+                        <input id="inputTel" type="text"><br>
+                        <label for="inputMail">Email:</label><br>
+                        <input id="inputMail" type="text"><br>
+                        <label for="inputMsg">Ваше обращение:</label><br>
+                        <textarea id="inputMsg" rows="5" cols="50" type="text"></textarea><br>
+                        <br>
+                        <button class="grayBtn">Очистить</button>
+                        <button class="greenBtn">Отправить</button>
+                    </form>
+                </div>                              
+            </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="fullNews" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+            <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header modalHeader">
+                    <h5 class="modal-title" id="exampleModalLabel">Создать обращение</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body modalBody">
+                    <p>
+                        <span>О компании | 07 Июль 2020</span><br>
+                        <img src = "photo1.png" width="35%"  class = "galleryImageIMG" align = "left">            
                         РвлалмытсгОЛЫв Рвтыв тьм!, лоимтвлслтО,Г"мсроиывс моиавыомтиыволс !ч ырапототяшч 3277238и 472н3 ун23шривыьтс №!
                     </p>
                 </div>                              
