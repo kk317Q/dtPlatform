@@ -196,6 +196,13 @@
             .greenBtn:hover, .grayBtn:hover{
                 background-color: #585757;
             }
+
+            p{
+                color: #585757;
+                font-size: 1.5vw;
+                margin-top: 2%;
+                margin-left: 10%;
+            }
             
 
             /*GALLERY STYLE*/
@@ -312,12 +319,7 @@
                 bottom: 5px;
             }
 
-            p{
-                color: #585757;
-                font-size: 1.5vw;
-                margin-top: 2%;
-                margin-left: 10%;
-            }
+       
 
             /*Product cards*/
             .productCardRow{
@@ -448,6 +450,17 @@
                 margin: auto;
             }
 
+
+            /*Partners Page*/
+            .forPartnersPage p, .forPartnersPage ol{
+                font-size: 1.3vw;
+                margin-left: 5%;
+                color: #585757;
+            }
+
+            .forPartnersPage ol li{
+                margin-bottom: 1%;
+            }
             
 
             /*Pagination styling*/
@@ -587,82 +600,66 @@
             
             <!--This row is body-->
             <div class = "row">
-                <h1 class="primaryHeader">Продукция Drivetoys&Sweets!</h1>       
-                <div class="dropdown" onmouseover="dropCategories()" onmouseout="dropCategoriesHide()" onclick="dropCategoriesHide()" style="padding-bottom:1%; margin: auto; width: auto;  position:relative; display: inline-block; text-align: center; font-weight: 600; font-size: 15pt; color: #7c7c7c;">
-                    Категория: <a href="" id = "selectedCategory" style="text-decoration: underline;"> Все</a>
-
-                    <div id="dropCategories" style="display: none; position: absolute; left: 49%;  background-color: #ffffff; width: 150px; overflow-y: scroll;   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
-                      <a href="" style="display: block; text-decoration: none;">Все</a>
-                      <a href="" style="display: block; text-decoration: none;">Игрушки</a>
-                      <a href="" style="display: block; text-decoration: none;">Конфеты</a>
-                    </div>
-                </div>        
+                <h1 class="primaryHeader">Поставщик Drivetoys&Sweets!</h1>       
+       
                 <div class = "col-12 mainPart">
                     <div class="container-fluid mainPart">
-                            <div class = "row">
-                                <div class = "col-sm-10 productCardFull">
-                                    <div class="row" style="padding: 1px;">
-                                        <div class="col-lg-4 leftSide">
-                                            <img src = "pic1.png" width="300px" class = "galleryImageIMG" style=" display: inline-block;"><br>       
-                                            <hr>
-                                            <div style = "">
-                                                <img src = "pic1.png" width="100px" class = "" style=" display: inline">
-                                                <img src = "pic1.png" width="100px" class = "" style=" display: inline">
-                                                <img src = "pic1.png" width="100px" class = "" style=" display: inline">
-                                               
-                                            </div>
-                                            
+                        <div class="row">
+                            <div class="col-7 forPartnersPage">
+                                <p>
+                                    Здравствуйте, уважаемый партнёры, спасибо за проявленный интерес к работе с нами. 
+                                    <br>
+                                    <br>
+                                    Если Вас интересует закупка нашего ассортимента, обращайтесь к нашим сотрудникам по контактам, указанными в следующем разделе, либо по форме ниже. 
+                                    
+                                    Для наших партнёров мы стараемся создать комфортные условия работы. Мы обязательно учитываем интересы наших партнёров и отгружая Вам партию продукции, мы и дальше заботимся, о том чтобы Ваши продажи активно развивались. Ниже найдёте пару особенностей работы с нами. 
+                                    </p>
+                                    <hr>
+                                    <p>
+                                        <ol>
+                                            <li>Мы всегда на связи и постоянно интересуемся положением дел у Вас в регионе, чтобымы могли своевременно Вам помочь. DT’S регулярно проводит промоакции для поддержания уровня продаж своих клиентов.</li>
+                                            <li>Нет возможности оплатить заказ сразу? DT’S предоставляет возможность отсрочки платежа. Срок и условия обсуждаем индивидуально, но обычно отсрочка до 40 дней возможна. </li>
+                                            <li>Для тех кто стремится к эксклюзиву: DT’S может обеспечить Вас возможностью стать единственными поставщиками в Вашем регионе. Сроки и условия соответственно будем обсуждать уже индивидуально.</li>
+                                            <li>Мы постоянно расширяем наш ассортимент и стремимся завозить, как интересные новинки, так и хиты продаж. Если у Вас есть запрос на крупную партию продукцию, можем зарезервировать для Вас определённое количество даже на стадии производства. По ценам и условиям для резерва обращайтесь к менеджерам.</li>
+                                            <li>Уникальная особенность DT’S, как поставщика: Часто цены на продукцию меняются ближе к сезону продаж. Но для особо предусмотрительных партнёров мы предлагаем возможность зарезервировать партию продукции с фиксацией цены, путём оплаты первоначального взноса. Таким образом, Вы запасётесь товаром в период, когда цены ещё не выросли. Но при этом Вы оплатить лишь минимальную часть Вашего заказа перед отгрузкой, а партия будет хранится у нас на складе, пока вы не решите забрать её. По деталям подобного предложения пишите или звоните нам!</li>
+                                            <li>Вся наша продукция сертифицирована и не нарушает закон РФ ни в каком её виде. Таким образом мы для Вас сводим к минимуму риски.</li>
+                                            <li>По желанию партнёров, Вы можете получить наши фото/видео материалы по нашей продукции. Напишите менеджеру и Вам вышлют ссылку!</li>
+                                        </ol>
+                                    </p>
+                            </div>
+                            <div class="col-4">
+                                    <div class="modal-dialog modal-md">
+                                    <div class="modal-content">
+                        
+                                        <div class="modal-header modalHeader">
+                                            <h5 class="modal-title" id="exampleModalLabel">Стать поставщиком</h5>
                                         </div>
-                                        <div class="col-lg-5 rightSide">
-                                            <a href="">
-                                                <h5>Каталка Mercedes-Benz S65 AMG Coupe</h5>
-                                            </a><br>
-                                            <span>• Артикул: 0001</span><br>
-                                            <span>• Категория: Каталки</span>
-                                            <br> <br>
-                                            <p>
-                                            HHHHDHHFDHBDHBFJDBVBSHBVJHDBHJBCVSDBVHSBJVNBMCXZNHJCKSDN CHSDCJHKSJDBCHSDJKCBSDBCJDSCNDSJHC SDHB
-                                            </p>     
-                                            <div class="buttonContainer">
-                                                <button class="greenBtn">Корзина</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 extraBlock">
-                                            <div class = "row">
-                                                <div class = "col-sm">Другие продукты</div><br>
+                                        <div class="modal-body modalBody">
+                                            <form action="">
+                                                <label for="inputName">Имя:</label><br>
+                                                <input id="inputName" type="text"><br>
+                                                <label for="inputTel">Телефон:</label><br>
+                                                <input id="inputTel" type="text"><br>
+                                                <label for="inputMail">Email:</label><br>
+                                                <input id="inputMail" type="text"><br>
                                                 <hr>
-                                            </div>
-                                            <div class="row">
-                                                <div class = "col-2 miniCard" > 
-                                                    <img src = "pic1.png" width="100px">
-                                                    <div>Каталка Mercedes-Benz S65</div>
-                                                </div>
-                                                <div class = "col-2 miniCard" > 
-                                                    <img src = "pic1.png" width="100px">
-                                                    <div>Каталка Mercedes-Benz S65</div>
-                                                </div>
-                                                <div class = "col-2 miniCard" > 
-                                                    <img src = "pic1.png" width="100px">
-                                                    <div>Каталка Mercedes-Benz S65</div>
-                                                </div>
-                                                <div class = "col-2 miniCard" > 
-                                                    <img src = "pic1.png" width="100px">
-                                                    <div>Каталка Mercedes-Benz S65</div>
-                                                </div>
-                                                <div class = "col-2 miniCard" > 
-                                                    <img src = "pic1.png" width="100px">
-                                                    <div>Каталка Mercedes-Benz S65</div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-               
+                                                <label for="inputFirmName">Наименование компании:</label><br>
+                                                <input id="inputFirmName" type="text"><br>
+                                                <label for="inputINN">ИНН:</label><br>
+                                                <input id="inputINN" type="text"><br>
+                                                <label for="inputRegion">Город/Регион:</label><br>
+                                                <input id="inputRegion" type="text"><br>
+                                                <label for="inputMsg">Ваше обращение:</label><br>
+                                                <textarea id="inputMsg" rows="5" cols="50" type="text"></textarea><br>
+                                                <br><br>
+                                                <button class="grayBtn">Очистить</button>
+                                                <button class="greenBtn">Отправить</button>
+                                            </form>
+                                        </div>                              
                                     </div>
-        
-                                  
-                                        
-                                </div>
-                            </div>   
+                                    </div>
+                            </div>
+                        </div> 
                     </div><br>       
                 </div> 
             </div>           

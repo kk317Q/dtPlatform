@@ -196,6 +196,13 @@
             .greenBtn:hover, .grayBtn:hover{
                 background-color: #585757;
             }
+
+            p{
+                color: #585757;
+                font-size: 1.5vw;
+                margin-top: 2%;
+                margin-left: 10%;
+            }
             
 
             /*GALLERY STYLE*/
@@ -312,12 +319,7 @@
                 bottom: 5px;
             }
 
-            p{
-                color: #585757;
-                font-size: 1.5vw;
-                margin-top: 2%;
-                margin-left: 10%;
-            }
+       
 
             /*Product cards*/
             .productCardRow{
@@ -448,7 +450,24 @@
                 margin: auto;
             }
 
-            
+
+            /*Partners Page*/
+            .forPartnersPage p, .forPartnersPage ol{
+                font-size: 1.3vw;
+                margin-left: 5%;
+                color: #585757;
+            }
+
+            .forPartnersPage ol li{
+                margin-bottom: 1%;
+            }
+
+            /*About Us*/
+            .aboutUsPage p{
+                font-size: 1.5vw;
+                margin-left: 10%;
+                margin-right: 10%;
+            }
 
             /*Pagination styling*/
             .pagination{
@@ -587,82 +606,33 @@
             
             <!--This row is body-->
             <div class = "row">
-                <h1 class="primaryHeader">Продукция Drivetoys&Sweets!</h1>       
-                <div class="dropdown" onmouseover="dropCategories()" onmouseout="dropCategoriesHide()" onclick="dropCategoriesHide()" style="padding-bottom:1%; margin: auto; width: auto;  position:relative; display: inline-block; text-align: center; font-weight: 600; font-size: 15pt; color: #7c7c7c;">
-                    Категория: <a href="" id = "selectedCategory" style="text-decoration: underline;"> Все</a>
-
-                    <div id="dropCategories" style="display: none; position: absolute; left: 49%;  background-color: #ffffff; width: 150px; overflow-y: scroll;   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); z-index: 1;">
-                      <a href="" style="display: block; text-decoration: none;">Все</a>
-                      <a href="" style="display: block; text-decoration: none;">Игрушки</a>
-                      <a href="" style="display: block; text-decoration: none;">Конфеты</a>
-                    </div>
-                </div>        
+                <h1 class="primaryHeader">Поставщик Drivetoys&Sweets!</h1>       
+       
                 <div class = "col-12 mainPart">
                     <div class="container-fluid mainPart">
-                            <div class = "row">
-                                <div class = "col-sm-10 productCardFull">
-                                    <div class="row" style="padding: 1px;">
-                                        <div class="col-lg-4 leftSide">
-                                            <img src = "pic1.png" width="300px" class = "galleryImageIMG" style=" display: inline-block;"><br>       
-                                            <hr>
-                                            <div style = "">
-                                                <img src = "pic1.png" width="100px" class = "" style=" display: inline">
-                                                <img src = "pic1.png" width="100px" class = "" style=" display: inline">
-                                                <img src = "pic1.png" width="100px" class = "" style=" display: inline">
-                                               
-                                            </div>
-                                            
-                                        </div>
-                                        <div class="col-lg-5 rightSide">
-                                            <a href="">
-                                                <h5>Каталка Mercedes-Benz S65 AMG Coupe</h5>
-                                            </a><br>
-                                            <span>• Артикул: 0001</span><br>
-                                            <span>• Категория: Каталки</span>
-                                            <br> <br>
-                                            <p>
-                                            HHHHDHHFDHBDHBFJDBVBSHBVJHDBHJBCVSDBVHSBJVNBMCXZNHJCKSDN CHSDCJHKSJDBCHSDJKCBSDBCJDSCNDSJHC SDHB
-                                            </p>     
-                                            <div class="buttonContainer">
-                                                <button class="greenBtn">Корзина</button>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-2 extraBlock">
-                                            <div class = "row">
-                                                <div class = "col-sm">Другие продукты</div><br>
-                                                <hr>
-                                            </div>
-                                            <div class="row">
-                                                <div class = "col-2 miniCard" > 
-                                                    <img src = "pic1.png" width="100px">
-                                                    <div>Каталка Mercedes-Benz S65</div>
-                                                </div>
-                                                <div class = "col-2 miniCard" > 
-                                                    <img src = "pic1.png" width="100px">
-                                                    <div>Каталка Mercedes-Benz S65</div>
-                                                </div>
-                                                <div class = "col-2 miniCard" > 
-                                                    <img src = "pic1.png" width="100px">
-                                                    <div>Каталка Mercedes-Benz S65</div>
-                                                </div>
-                                                <div class = "col-2 miniCard" > 
-                                                    <img src = "pic1.png" width="100px">
-                                                    <div>Каталка Mercedes-Benz S65</div>
-                                                </div>
-                                                <div class = "col-2 miniCard" > 
-                                                    <img src = "pic1.png" width="100px">
-                                                    <div>Каталка Mercedes-Benz S65</div>
-                                                </div>
-                                                
-                                            </div>
-                                        </div>
-               
-                                    </div>
-        
-                                  
-                                        
-                                </div>
-                            </div>   
+                        <div class="row">
+                            <div class="col-12 aboutUsPage">
+                                <p>
+                                    <img src="LogoDT(Official).png" width="40%" alt="LogoDT" align = "right">
+
+                                    Drivetoys - молодой брэнд, который быстро полюбили, как родители, так и дети по всей России. Но на чём основано доверие к нам?
+                                </p>
+                                <p>
+                                    Во первых, вся продукция DT проходит достаточно тяжёлый процесс сертификации. Это включает в себя испытания игрушки, её состовляющих на безопасность для здоровья детей. С каждым годом требования к безопасности игрушек на территории РФ повышаются, однако для нас это не является проблемой, ведь ещё на стадии производства продукции мы уделяем много внимания безопасности.
+                                </p>
+                                <p>
+                                    Во вторых, мы всегда ценим наших клиентов. Для нас важно, чтобы наша продукция становилась очердной возможностью к успеху для партнёров в сфере B2B, а для частных клиентов поводом для счасьтя их детей и их самих!
+                                </p>
+                                <p>
+                                    В третьих, мы всегда стараемся улучшаться. Для Drivetoys очень важную роль играет обратная связь от покупателей. Ведь именно таким образом нам удаётся улучшать себя и свою продукцию. Мы расчитываем на вашы советы, пожелания и обещаем к ним прислушиваться.
+                                </p>
+                                <p>
+                                    Кому-то может показаться, что соблюдать принципы указанные выше очень сложно. И по правде говоря это так и есть. Но ради радостных детей и их счастливых родителей, мы готовы работать не покладая рук. Мы уверены в оцените наш труд!
+                                </p>
+
+
+                            </div>
+                        </div> 
                     </div><br>       
                 </div> 
             </div>           
